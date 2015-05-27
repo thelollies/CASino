@@ -1,5 +1,6 @@
 module CASino::AuthenticationProcessor
   extend ActiveSupport::Concern
+  require 'casino/authenticator'
 
   def validate_login_credentials(username, password)
     authentication_result = nil
